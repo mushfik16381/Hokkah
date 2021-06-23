@@ -392,11 +392,11 @@
         padding-bottom: 0;
     }
     #story-part .new-story-img .mocup-smoke {
-        bottom: 28%;
+        bottom: 16%;
         left: -60%;
     }
     #story-part .new-story-img .overlay {
-        top: 42%;
+        top: 50%;
     }
     #story-part .new-story-text{
         position: revert;
