@@ -464,6 +464,13 @@
 
     /* ======================new-story-part end================ */
 
+    /* ======================new-gallery-part start================ */
+    #banner-part .slick-dots .slick-active button {
+        display: none;
+    }
+    
+    /* ======================new-gallery-part end================ */
+
     /* ============newcontact-part start============= */
     #banner-con-part .banner .banner-smoke .overlay h2 {
         padding-top: 140px;
@@ -1026,6 +1033,15 @@ margin-top: -460px;
 
 
 /* ======================new-story-part end================ */
+
+/* ======================new-gallery-part start================ */
+#banner-part .slick-dots .slick-active button {
+    display: none;
+}
+
+/* ======================new-gallery-part end================ */
+
+
 /* ============newcontact-part start============= */
 #banner-con-part .banner .banner-smoke .overlay h2 {
     padding-top: 180px;
@@ -1368,35 +1384,6 @@ margin-top: -460px;
     #reservation-part form button a {
         font-size: 23px;
     }
-    /* #reservation-part{
-        margin-top: 120px;
-    }
-    #reservation-part .image .smoke-img{
-        display: none;
-    }
-    #reservation-part .reservation-title h2 {
-        font-size: 30px;
-        padding-bottom: 15px;
-        padding-top: 40px;
-    }
-    #reservation-part .reservation-title img {
-        padding-bottom: 25px;
-    }
-    #reservation-part form .main {
-        display: block;
-    }
-    #reservation-part form .main .mar {
-        margin-left: 0;
-    }
-    #reservation-part form .dropdown .member {
-        width: 100%;
-    }
-    #reservation-part form .dropdown .day {
-        width: 100%;
-    }
-    #reservation-part form .dropdown .time {
-        width: 100%;
-    } */
     /* =========resarvation end======= */
 
     /* =========testimonial start======= */
@@ -1436,37 +1423,6 @@ margin-top: -460px;
     #testimonial-part .test-slider .item .text ul{
         padding-top: 5px;
     }
-    /* #testimonial-part .test-slider .item{
-        display: block;
-    }
-    #testimonial-part .test-slider{
-        width: 90%;
-        margin: 0 auto;
-    }
-    #testimonial-part .test-slider .item .img {
-        width: 100%;
-    }
-    #testimonial-part .test-slider .item .text {
-        width: 100%;
-        padding-top: 30px;
-        padding-left: 15px;
-        padding-right: 0;
-    }
-    #testimonial-part .test-slider .item .text p {
-        font-size: 17px;
-    }
-    #testimonial-part .test-slider .item .text h3 {
-        padding-top: 20px;
-        font-size: 23px;
-    }
-    #testimonial-part .test-slider .item .text h4 {
-        font-size: 19px;
-        padding-top: 4px;
-    }
-    #testimonial-part .test-slider .item .text ul {
-        padding-top: 4px;
-        padding-bottom: 28px;
-    } */
     #testimonial-part .slick-dots {
         display: flex;
         position: absolute;
