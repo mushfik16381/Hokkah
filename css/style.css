@@ -70,16 +70,18 @@ html,.gallery-bg{
 	color: #fff;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+.navbar .nav-item:hover .nav-link{
     transition: .4s;
 }
-.navbar .nav-item:hover a{
+.navbar .nav-item:hover .nav-link{
     color: #ed5034;
 }
 .navbar .nav-item .active {
     color: #ed5034;
 }
 
-.navbar .navbar-nav li a.active::before {
+.navbar .navbar-nav li .nav-link.active::before {
     height: 115px;
 }
 .navbar .navbar-nav .nav-link::before {
@@ -94,7 +96,7 @@ html,.gallery-bg{
     z-index: -1;
     transition: .6s ;
 }
-.navbar .nav-item a:hover::before{
+.navbar .nav-item .nav-link:hover::before{
     height: 115px;
 } 
 .menufixed{
@@ -102,6 +104,39 @@ html,.gallery-bg{
     z-index: 9999;
     padding-bottom: 10px !important;
 }
+
+.menu-bar{
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.navbar .drop:hover .menu-bar{
+    opacity: 1;
+    visibility: visible;
+}
+.navbar .drop i{
+    transition: .4s;
+    font-size: 21px;
+}
+.navbar .drop:hover i{
+    transform: rotate(180deg);
+}
+.navbar .nav-item .dropdown li:hover a {
+    color: #ed5034;
+}
+.menu-bar .dropdown {
+    top: 74px;
+    position: absolute;
+    left: 52px;
+    width: 172%;
+    background: #111;
+    padding: 10px 12px;
+}
+.menu-bar .dropdown a{
+    padding: 0;
+    padding: 7px 0;
+}
+
 /* ===================================
           navbar part end
 ==================================== */
@@ -175,8 +210,8 @@ html,.gallery-bg{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    color: #595a5c;
-    border: 1px solid #595a5c;
+    color: #696868;
+    border: 1px solid #696868;
     background: transparent;
     text-align: center;
     line-height: 60px;
@@ -193,8 +228,8 @@ html,.gallery-bg{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    color: #595a5c;
-    border: 1px solid #595a5c;
+    color: #696868;
+    border: 1px solid #696868;
     background: transparent;
     text-align: center;
     line-height: 60px;
@@ -216,6 +251,7 @@ html,.gallery-bg{
     border-color: #fff;
     color: #ed5034;
 }
+
 /* ===================================
           banner part end
 ==================================== */
@@ -243,14 +279,11 @@ html,.gallery-bg{
          new banner part start
 ==================================== */
 
-
-
 /* ===================================
         new story-banner part start
 ==================================== */
 #banner-part .new-story-banner{
     padding-top: 400px;
-
 }
 #banner-part h5{
     font-family: 'Yeseva One', cursive;
@@ -265,12 +298,9 @@ html,.gallery-bg{
     font-weight: 200;
     color: #fff;
 }
-
 /* ===================================
         new story-banner part end
 ==================================== */
-
-
 
 /* ===================================
         banner-con part start
@@ -347,13 +377,9 @@ html,.gallery-bg{
         banner-con part end
 ==================================== */
 
-
-
-
 /* ===================================
           story part start
 ==================================== */
-
 #story-part .img{
     width: 100%;
     padding-top: 100px;
@@ -443,8 +469,6 @@ html,.gallery-bg{
           story part end
 ==================================== */
 
-
-
 /* ===================================
          home2 story part start
 ==================================== */
@@ -466,6 +490,9 @@ html,.gallery-bg{
 /* ===================================
          new story part start
 ==================================== */
+#story-part .new-story-img{
+    padding-bottom: 0;
+}
 #story-part .new-story-text{
     padding-top: 115px;
 }
@@ -658,13 +685,22 @@ html,.gallery-bg{
           happy-hour part end
 ==================================== */
 
-
 /* ===================================
           team part start
 ==================================== */
 #team-part{
     padding-bottom: 100px;
     position: relative;
+}
+#team-part .team-title{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+#team-part .team-title img{
+    padding-top: 13px;
 }
 #team-part .team-line{
     padding-bottom: 0;
@@ -675,6 +711,7 @@ html,.gallery-bg{
 }
 #team-part .team{
     position: relative;
+    margin-top: 100px;
 }
 #team-part .team .round{
     width: 230px;
@@ -694,11 +731,11 @@ html,.gallery-bg{
 }
 #team-part .team .smoke {
     position: absolute;
-    top: -120px;
-    left: -10px;
+    top: -151px;
+    left: -9px;
     opacity: 0;
     visibility: hidden;
-    width: 111%;
+    width: 109%;
 	z-index: -1;
     transition: .4s;
 }
@@ -750,20 +787,6 @@ html,.gallery-bg{
 }
 /* ===================================
           team part end
-==================================== */
-
-/* ===================================
-          story-team part start
-==================================== */
-
-#team-part .story-team .round{
-    margin-top: 120px ;
-}
-#team-part .story-team .smoke{
-    top: -82px ;
-}
-/* ===================================
-          story-team part end
 ==================================== */
 
 /* ===================================
@@ -1183,12 +1206,14 @@ html,.gallery-bg{
     color: #111;
     font-size: 20px;
     background: #ed5034;
-    padding: 14px;
+    border: 2px solid #ed5034;
+    padding: 10px;
     transition: .4s;
 }
 .back-to-top:hover{
     background: #222;
     color: #ed5034;
+    border: 2px solid #ed5034;
 }
 /* =================================
         back-to-top-part end
@@ -1209,22 +1234,18 @@ footer p{
        footer-part end
 =================================== */
 
-
-
-
-
-
-
-
+/* ===================================
+       error-part start
+=================================== */
 .nav-error{
     background: #222;
 }
 #error-part .error{
     background: url(../images/404.jpg) no-repeat center;
     background-size: cover;
-    margin-top: 80px;
+    margin-top: 65px;
     width: 100%;
-    padding-top: 300px;
+    padding-top: 209px;
     padding-bottom: 440px;
     text-align: center;
 }
@@ -1232,11 +1253,14 @@ footer p{
     background: url(../images/button-bg.png) no-repeat center;
     background-size: cover;
     font-family: 'Yeseva One', cursive;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 400;
-    padding: 25px 40px;
+    padding: 20px 30px;
     border-radius: 45px;
     color: #ed5034;
     border: 1px solid #2f3031; 
     margin: 0 auto;
 }
+/* ===================================
+       error-part end
+=================================== */

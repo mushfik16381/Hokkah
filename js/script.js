@@ -63,6 +63,13 @@ $(window).scroll(function(){
     $(".back-to-top").fadeOut()
   }
 })
+$(window).load(function(){
+  if($(window).scrollTop() > 300){
+    $(".back-to-top").fadeIn()
+  }else{
+    $(".back-to-top").fadeOut()
+  }
+})
 // =========== back-to-top end===========//
 
 
@@ -268,10 +275,11 @@ $('.test-slider').slick({
       // instead of a settings object
     ]
   });
-  // =========== testimonial end===========//
+// =========== testimonial end===========//
 
-
-  $('.counter').counterUp({
-    delay: 10,
-    time: 1000
-  });
+// =========== counter start===========//
+$('.counter').counterUp({
+  delay: 10,
+  time: 1000
+});
+// =========== counter end===========//

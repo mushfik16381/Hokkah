@@ -75,6 +75,15 @@
         background: #ed5034;
         border-color: #ed5034;
     }
+    .menu-bar .dropdown {
+        top: 27px;
+        position: absolute;
+        left: 20px;
+        width: 204%;
+        background: #111;
+        padding: 10px 12px;
+        z-index: 1;
+    }
     /* =========banner end======= */
 
 
@@ -176,10 +185,6 @@
     }
     /* =========happy-hour end======= */
 
-    /* =========new happy-hour start======= */
-
-    /* =========new happy-hour end======= */
-
     /* =========team start======= */
     #team-part{
         margin-top: 405px;
@@ -196,9 +201,6 @@
         padding-top: 0;
     }
     #team-part .team .smoke {
-        /* top: -92px;
-        left: 26px;
-        width: 90%; */
         display: none;
     }
     #team-part .text {
@@ -377,11 +379,9 @@
     /* ======================new-story-part start================ */
 
     /* =========new-story start======= */
-     #banner-part .new-story .slick-dots .slick-active button {
-            background: #ed5034;
-            border-color: #ed5034;
-            display: none;
-        }
+    #banner-part .new-story .slick-dots .slick-active button {
+        display: none;
+    }
     /* =========new-story end======= */
 
     /* =========new story start======= */
@@ -459,12 +459,10 @@
     }
     /* =========story-team end======= */
 
-
-
     /* ======================new-story-part end================ */
 
     /* ======================new-gallery-part start================ */
-    #banner-part .slick-dots .slick-active button {
+    #banner-part .new-gallery .slick-dots .slick-active button {
         display: none;
     }
     
@@ -518,13 +516,6 @@
     }
      /* ============error-part end=========== */
 
-
-
-
-
-
-
-
 }
 @media(min-width:576px) and (max-width:767px){
 
@@ -560,6 +551,15 @@
     }
     .navbar .nav-item a{
         padding: 0;
+    }
+    .menu-bar .dropdown {
+        top: 28px;
+        position: absolute;
+        left: 20px;
+        width: 205%;
+        background: #111;
+        padding: 10px 12px;
+        z-index: 1;
     }
     /* =========nav end======= */
 
@@ -649,9 +649,6 @@
         bottom: 16%;
         left: -60%;
     }
-    /* #story-part .img img {
-        width: 90%;
-    } */
     #story-part .img .overlay {
         width: 90px;
         height: 90px;
@@ -720,9 +717,9 @@
         padding: 0;
     }
     #team-part .team .smoke {
-        top: -71px;
-        left: 1px;
-        width: 100%;
+        top: -139px;
+        left: -4px;
+        width: 105%;
     }
     #team-part .team {
         padding-top: 0;
@@ -773,6 +770,14 @@
     /* =========resarvation start======= */
     #reservation-part{
         margin-top: 120px;
+    }
+    #reservation-part .image{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #reservation-part .form-part{
+        width: 80%;
+        margin: 0 auto;
     }
     #reservation-part .image .smoke-img{
         display: none;
@@ -908,8 +913,6 @@
 
     /* =========new-story start======= */
     #banner-part .new-story .slick-dots .slick-active button {
-        background: #ed5034;
-        border-color: #ed5034;
         display: none;
     }
     /* =========new-story end======= */
@@ -989,16 +992,14 @@
 
 /* =========story-team start======= */
     #team-part .story-team-part {
-margin-top: -460px;
+        margin-top: -460px;
     }
 /* =========story-team end======= */
-
-
 
 /* ======================new-story-part end================ */
 
 /* ======================new-gallery-part start================ */
-#banner-part .slick-dots .slick-active button {
+#banner-part .new-gallery .slick-dots .slick-active button {
     display: none;
 }
 
@@ -1034,8 +1035,6 @@ margin-top: -460px;
     font-size: 26px;
     padding-bottom: 30px;
 }
-
-
 /* ============newcontact-part end============= */
 
 /* ============error-part start============= */
@@ -1053,9 +1052,7 @@ margin-top: -460px;
 }
 /* ============error-part end============= */
 
-
 }
-
 @media(min-width:768px) and (max-width:991px){
 
 
@@ -1090,6 +1087,15 @@ margin-top: -460px;
     }
     .navbar .nav-item a{
         padding: 0;
+    }
+    .menu-bar .dropdown {
+        top: 28px;
+        position: absolute;
+        left: 20px;
+        width: 205%;
+        background: #111;
+        padding: 10px 12px;
+        z-index: 1;
     }
     /* =========nav end======= */
 
@@ -1225,8 +1231,6 @@ margin-top: -460px;
     }
     /* =========new happy-hour end======= */
 
-
-
     /* =========team start======= */
     #team-part{
         padding-bottom: 100px;
@@ -1234,14 +1238,10 @@ margin-top: -460px;
     #team-part .team-slider-part {
         padding: 0;
     }
-    /* #team-part .team .round {
-        margin: 0 auto;
-        margin-top: 60px;
-    } */
     #team-part .team .smoke {
-        top: -77px;
-        left: 1px;
-        width: 100%;
+        top: -124px;
+        left: -6px;
+        width: 110%;
     }
     #team-part .team {
         padding-top: 0;
@@ -1508,10 +1508,6 @@ margin-top: -460px;
     }
     /* ============ error-part end============= */
 
-
-
-
-
 }
 @media(min-width:992px) and (max-width:1199px){
 
@@ -1559,8 +1555,6 @@ margin-top: -460px;
     /* =========banner end======= */
 
     /* =========story start======= */
-
-
     #story-part .text {
         padding-top: 60px;
     }
@@ -1657,8 +1651,6 @@ margin-top: -460px;
     }
     /* =========new happy-hour end======= */
 
-
-
     /* =========team start======= */
     #team-part{
         padding-bottom: 100px;
@@ -1667,9 +1659,9 @@ margin-top: -460px;
         padding: 0;
     }
     #team-part .team .smoke {
-        top: -77px;
+        top: -145px;
         left: 1px;
-        width: 100%;
+        width: 105%;
     }
     #team-part .team {
         padding-top: 0;
@@ -1677,6 +1669,7 @@ margin-top: -460px;
     #team-part .team .round {
         width: 210px;
         height: 210px;
+        margin-top: 70px;
     }
     #team-part .text {
         margin-top: 25px;
@@ -1767,12 +1760,9 @@ margin-top: -460px;
     #reservation-part form button a {
         font-size: 23px;
     }
-    
     /* =========resarvation end======= */
 
     /* =========testimonial start======= */
-
-
     #testimonial-part .test-slider .item .text {
         padding: 0;
         padding-left: 20px;
@@ -1782,44 +1772,6 @@ margin-top: -460px;
     #testimonial-part .test-slider .item .text p {
         font-size: 17px;
     }
-    /* #testimonial-part {
-        padding-bottom: 30px;
-    }
-    #testimonial-part .test-slider {
-        width: 90%;
-        padding-bottom: 50px;
-    }
-    #testimonial-part .test-slider .item .img {
-        width: 40%;
-    }
-    #testimonial-part .test-slider .item .text {
-        width: 60%;
-        padding: 0;
-        padding-top: 10px;
-        padding-left: 20px;
-    }
-    #testimonial-part .test-slider .item .img{
-        padding: 0;
-    }
-    #testimonial-part .test-slider .item .img img{
-        width: 100%;
-    }
-    #testimonial-part .test-slider .item .text p{
-        font-size: 18px;
-    }
-    #testimonial-part .test-slider .item .text h3 {
-        padding-top: 16px;
-        font-size: 22px;
-    }
-    #testimonial-part .test-slider .item .text h4 {
-        font-size: 20px;
-        padding-top: 4px;
-    }
-    #testimonial-part .test-slider .item .text ul{
-        padding-top: 5px;
-    } */
-    
-    
     /* =========testimonial end======= */
 
     /* =========contact start======= */
@@ -1877,9 +1829,10 @@ margin-top: -460px;
         padding-top: 400px;
     }
     /* ==================new-story-part end================= */
-    #counter-part{
+    #counter-part {
         width: 95%;
-        margin: 60px auto;
+        margin: 0 auto;
+        margin-top: 60px;
     }
     #counter-part .item h2 {
         font-size: 37px;
@@ -1888,29 +1841,9 @@ margin-top: -460px;
         font-size: 20px;
     }
 
-
-
-
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media(min-width:500px) and (max-width:575px){
-
-
     #story-part .img {
         padding-top: 530px;
     }
